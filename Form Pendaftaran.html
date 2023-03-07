@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <title>Form Pendaftaran Id Baru</title>
+</head>
+<style>
+    label{
+        font-weight: bold;
+    }
+
+    body {
+        background-image: url(jonse.png);
+    }
+</style>
+<body>
+    <div style="background-color:white" class="container p-3 my-3 border">
+        <h1 class="text-center">Form Pendaftaran</h1>
+        <div id="form" method="post">
+            <div class="alert alert-secondary">
+                <strong> DATA DIRI</strong>
+              </div>
+              <div class="row">
+                <div class="col-sm-7">
+                    <div class="form-grup">
+                        <label>Nama Lengkap :  </label>
+                        <input type="text" name="nama" class="from-control" placeholder="Masukkan Nama Lengkap">
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="form-grup">
+                        <label>Nomor NIK :  </label>
+                        <input type="text" name="NIK" class="from-control" placeholder="Masukkan Nomor NIK">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-grup">
+                        <label>Tempat Tanggal Lahir : </label> 
+                        <input type="text" name="Tempat_tanggal_lahir" class="from-control" placeholder="Masukkan Tempat">
+                    </div>   
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-grup">
+                        <label>Tanggal Lahir : </label> 
+                        <input type="date" name="tanggal_lahir" class="from-control">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-grup">
+                        <label>Status :  </label>
+                        <select class="form-control" name="status">
+                            <option>pilih</option>
+                            <option value="Belum Nikah">Belum Nikah</option>
+                            <option value="Menikah">Menikah</option>
+                            <option value="DUDA">DUDA</option>
+                            <option value="JANDA">JANDA</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-grup">
+                        <label>Jenis Kelamin :</label>
+                        <br>
+                        <input type="radio" name="jk" value="Laki-Laki"> Laki-Laki
+                        <br>
+                        <input type="radio" name="jk" value="perempuan"> perempuan
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-grup">
+                        <label>AGAMA :  </label>
+                        <select class="form-control" name="AGAMA">
+                            <option>pilih</option>
+                            <option value="ISLAM">ISLAM</option>
+                            <option value="KRISTEN">KRISTEN</option>
+                            <option value="HINDU">HINDU</option>
+                            <option value="BUDHA">BUDHA</option>
+                            <option value="KONGHUCU">KONGHUCU</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-grup">
+                       <label>kewarganegaraan </label>
+                       <br>
+                       <input type="radio" name="kwn" value="Warga Negara Asing (WNA)"> Warga Negara Asing (WNA)
+                       <br>
+                       <input type="radio" name="kwn" value="Warga Negara Indonesia (WNI)"> Warga Negara Indonesia(WNI)
+                    </div>
+               </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <label>E-mail</label>
+                    <input type="email" name="email" class="form-control" placeholder="Masukkan E-mail">
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-grup">
+                        <label>Nomor Handphone</label>
+                        <input type="text" name="no_hp" class="form-control" placeholder="Masukkan Nomor Handphone">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-grup">
+                        <label>Ibu Kandung</label>
+                        <input type="text" name="nama_ibu" class="form-control" placeholder="Masukkan Nama Ibu Kandung">
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert alert-secondary">
+                <strong> Data domisili</strong>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-grup">
+                        <label>Almat Rumah </label>
+                        <textarea class="form-control" name="alamat_rumah" rows="2" id="alamat"></textarea>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="form-grup">
+                        <label>Kode Pos </label>
+                        <input type="text" class="form-control" name="Kode_pos" placeholder="kode pos">
+                    </div>
+                </div>
+             </div>
+            <div class="row">
+                 <div class="col-sm-4">
+                    <div class="form-grup">
+                        <label>Kecamatan :</label>
+                        <input type="text"  name="kecamatan" class="form-control" placeholder="Masukkan Kecamatan">
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="form-grup">
+                        <label>Kabupaten/Kota :</label>
+                        <input type="text"  name="kabupaten/kota" class="form-control" placeholder="Masukkan Kabupaten/Kota">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-grup">
+                        <label>Provinsi :</label>
+                        <input type="text"  name="Provinsi" class="form-control" placeholder="Masukkan Provinsi">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-grup">
+                        <label>Desa :</label>
+                        <input type="text" nama="Desa" class="form-control" placeholder="Masukkan Nama Desa">
+                    </div>
+                </div>
+            </div>  
+            <div class=" alert alert-success">
+                <strong>
+                    <input type="checkbox" name="pertanyaam_1" value="pertanyaan1">
+                    saya menyatakan bahwa data diri yang saya isi sudah BENAR
+                    <br>
+                    <input type="checkbox" name="pertanyaam_2" value="pertanyaan2">
+                    saya mengisi data diri saya ini sudah benar dan saya siap menanggung segala resiko nya 
+                    <br>
+                </strong>
+            </div>
+
+            <center>
+                <button type="submit" name="submit" class="btn btn-primary">Daftar</button>
+                <button type="reset" name="Reset" class="btn btn-secondary">Reset</button>
+            </center>
+        </form>
+    </div>
+    <center>
+        <div style="background-color: black;" class="container p-3 my-3 border">
+            <h5 style="color: white;"text-center">BLNTK.23  ~ Copyright &#169; 2022 Powered by Visual Studio </h5>
+        </div>
+    </center>
+</body>
+</html>

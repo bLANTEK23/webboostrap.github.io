@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web company profile</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <header class="navbar sticky-top navbar-expand-lg navbar-dark  main-nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/logo.png" class="main-logo main-logo-putihj" />
+        <img src="assets/img/logo-hitam.png" class="main-logo main-logo-hitam" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto py-3">
+          <li class="nav-item">
+            <a class="nav-link active px-3" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="page.html">Fitur</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="page2.html">layanan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="#">kategori</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+</head>
+<style>
+    label{
+        font-weight: bold;
+    }
+
+    body {
+        background-image: url(jonse.png);
+    }
+</style>
+<body>
+    <div style="background-color:white" class="container p-3 my-3 border">
+        <h1 class="text-center">Form Pendaftaran</h1>
+        <div id="form" method="post">
+            <div class="alert alert-secondary">
+                <strong> DATA DIRI</strong>
+              </div>
+              <div class="row">
+                <div class="col-sm-7">
+                    <div class="form-grup">
+                        <label>Nama Lengkap :  </label>
+                        <input type="text" name="nama" class="from-control" placeholder="Masukkan Nama Lengkap">
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="form-grup">
+                        <label>Nomor NIK :  </label>
+                        <input type="text" name="NIK" class="from-control" placeholder="Masukkan Nomor NIK">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-grup">
+                        <label>Tempat Tanggal Lahir : </label> 
+                        <input type="text" name="Tempat_tanggal_lahir" class="from-control" placeholder="Masukkan Tempat">
+                    </div>   
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-grup">
+                        <label>Tanggal Lahir : </label> 
+                        <input type="date" name="tanggal_lahir" class="from-control">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-grup">
+                        <label>Status :  </label>
+                        <select class="form-control" name="status">
+                            <option>pilih</option>
+                            <option value="Belum Nikah">Belum Nikah</option>
+                            <option value="Menikah">Menikah</option>
+                            <option value="DUDA">DUDA</option>
+                            <option value="JANDA">JANDA</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-grup">
+                        <label>Jenis Kelamin :</label>
+                        <br>
+                        <input type="radio" name="jk" value="Laki-Laki"> Laki-Laki
+                        <br>
+                        <input type="radio" name="jk" value="perempuan"> perempuan
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-grup">
+                        <label>AGAMA :  </label>
+                        <select class="form-control" name="AGAMA">
+                            <option>pilih</option>
+                            <option value="ISLAM">ISLAM</option>
+                            <option value="KRISTEN">KRISTEN</option>
+                            <option value="HINDU">HINDU</option>
+                            <option value="BUDHA">BUDHA</option>
+                            <option value="KONGHUCU">KONGHUCU</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-grup">
+                       <label>kewarganegaraan </label>
+                       <br>
+                       <input type="radio" name="kwn" value="Warga Negara Asing (WNA)"> Warga Negara Asing (WNA)
+                       <br>
+                       <input type="radio" name="kwn" value="Warga Negara Indonesia (WNI)"> Warga Negara Indonesia(WNI)
+                    </div>
+               </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <label>E-mail</label>
+                    <input type="email" name="email" class="form-control" placeholder="Masukkan E-mail">
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-grup">
+                        <label>Nomor Handphone</label>
+                        <input type="text" name="no_hp" class="form-control" placeholder="Masukkan Nomor Handphone">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-grup">
+                        <label>Ibu Kandung</label>
+                        <input type="text" name="nama_ibu" class="form-control" placeholder="Masukkan Nama Ibu Kandung">
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert alert-secondary">
+                <strong> Data domisili</strong>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-grup">
+                        <label>Alamat Rumah </label>
+                        <textarea class="form-control" name="alamat_rumah" rows="2" id="alamat"></textarea>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="form-grup">
+                        <label>Kode Pos </label>
+                        <input type="text" class="form-control" name="Kode_pos" placeholder="kode pos">
+                    </div>
+                </div>
+             </div>
+            <div class="row">
+                 <div class="col-sm">
+                    <div class="form-grup">
+                        <label>Kecamatan :</label>
+                        <input type="text"  name="kecamatan" class="form-control" placeholder="Masukkan Kecamatan">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-grup">
+                        <label>Kabupaten/Kota :</label>
+                        <input type="text"  name="kabupaten/kota" class="form-control" placeholder="Masukkan Kabupaten/Kota">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-grup">
+                        <label>Provinsi :</label>
+                        <input type="text"  name="Provinsi" class="form-control" placeholder="Masukkan Provinsi">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="form-grup">
+                      <label>Desa :</label>
+                      <input type="text" nama="Desa" class="form-control" placeholder="Masukkan Nama Desa">
+                  </div>
+              </div>
+            </div>  
+            <div class=" alert alert-success">
+                <strong>
+                    <input type="checkbox" name="pertanyaam_1" value="pertanyaan1">
+                    saya menyatakan bahwa data diri yang saya isi sudah BENAR
+                    <br>
+                    <input type="checkbox" name="pertanyaam_2" value="pertanyaan2">
+                    saya mengisi data diri saya ini sudah benar dan saya siap menanggung segala resiko nya 
+                    <br>
+                </strong>
+            </div>
+
+            <center>
+                <button type="subnit" name="subnit" class="btn-btn-primary">subnit</button>
+                <button type="reset" name="reset" class="btn btn-secondary">Reset</button>
+            </center>
+        </form>
+    </div>
+    <center>
+        <div style="background-color: black;" class="container p-3 my-3 border">
+            <h5 style="color: white;"text-center">BLNTK.23  ~ Copyright &#169; 2022 Powered by Visual Studio </h5>
+        </div>
+    </center>
+      </div>
+    </div>
+  <footer>
+    <div class="main-footer-menu main-biru py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 mb-3">
+            <div class="mb-3">
+              <a href="index.html"><img src="assets/img/logo.png" class="w-75"/></a>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, nobis.
+            </p>
+            <p>
+              Desaigned & Developed with &hearts;</p>
+          </div>
+          <div class="col-lg-3 mb-3">
+            <h3>lorem, ipsun.</h3>
+            <ul>
+              <li><a href="">TEST</a></li>
+              <li><a href="">TEST</a></li>
+              <li><a href="">TEST</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 mb-3">
+            <h3>lorem, ipsun.</h3>
+            <ul>
+              <li><a href="">TEST</a></li>
+              <li><a href="">TEST</a></li>
+              <li><a href="">TEST</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 mb-3">
+            <h3>KONTAK</h3>
+            <ul>
+              <li>Email: email@bejo.com</li>
+              <li>Telegram : @kamu</li>
+              <li>instagram :@kamu</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center py-5 main-footer-copyright">Copyright &copy; 2021. All Rights Reseved</div>
+  </footer>
+  <script src="assets/js/bundle.min.js"></script>
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
